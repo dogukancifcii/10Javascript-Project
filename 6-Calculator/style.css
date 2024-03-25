@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c3cbe0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.display {
+  width: 100%;
+  height: 80px;
+  font-size: 35px;
+  text-align: end;
+  border: none;
+  outline: none;
+  margin-bottom: 40px;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 500px;
+  background-color: #eff1fa;
+  width: 400px;
+  padding: 30px;
+  border-radius: 35px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 9px;
+}
+.button {
+  background-color: #d8dbe8;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  font-size: 25px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.13) 0px 6px 6px;
+}
+.button:hover {
+  background-color: #dedee9;
+}
+.button:active {
+  background-color: #dbdbe9;
+}
+.dubble {
+  grid-column: 1 / span 2;
+}
+.operator {
+  background-color: #f94c00;
+}
+.operator:hover {
+  background-color: #fa6c2f;
+}
+.operator:active {
+  background-color: #f85712;
+}
+
+.del {
+  background-color: #a1b2cd;
+}
+.del:hover {
+  background-color: #aabad4;
+}
+.del:active {
+  background-color: #a0b4d3;
+}

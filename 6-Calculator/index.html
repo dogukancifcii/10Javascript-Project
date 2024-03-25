@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="display" disabled />
+      <div class="buttons">
+        <button class="button del" onclick="delDisplay()">C</button>
+        <button class="button del" onclick="clearDisplay()">AC</button>
+        <button class="button del" onclick="inputclick('%')">%</button>
+        <button class="button operator" onclick="inputclick('/')">/</button>
+        <button class="button" onclick="inputclick('7')">7</button>
+        <button class="button" onclick="inputclick('8')">8</button>
+        <button class="button" onclick="inputclick('9')">9</button>
+        <button class="button operator" onclick="inputclick('*')">*</button>
+        <button class="button" onclick="inputclick('4')" value="4">4</button>
+        <button class="button" onclick="inputclick('5')">5</button>
+        <button class="button" onclick="inputclick('6')">6</button>
+        <button class="button operator" onclick="inputclick('-')">-</button>
+        <button class="button" onclick="inputclick('1')">1</button>
+        <button class="button" onclick="inputclick('2')">2</button>
+        <button class="button" onclick="inputclick('3')">3</button>
+        <button class="button operator" onclick="inputclick('+')">+</button>
+        <button class="button dubble" onclick="inputclick('0') ">0</button>
+
+        <button class="button" onclick="inputclick('.')">.</button>
+        <button class="button operator" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
