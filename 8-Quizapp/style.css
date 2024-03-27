@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #1b2845;
+  background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quiz-container {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 600px;
+}
+h1 {
+  padding-bottom: 8px;
+  color: #939cc5;
+  border-bottom: 2px dotted rgba(147, 156, 197, 0.5);
+}
+#total-q {
+  font-size: 22px;
+  font-weight: 100;
+}
+.question {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  box-shadow: 0 6px 10px rgba(0, 100, 100, 0.2);
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border: 4px solid #1b466a;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  transition: transform 0.5s ease;
+}
+li:hover {
+  transform: scale(1.05);
+  background-color: #28577e;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  cursor: pointer;
+  font-size: 14px;
+}
+.radio-button {
+  margin-left: 14px;
+  color: #1b466a;
+}
+.radio-button.checked {
+  color: #009ffd;
+}
+.radio-button i {
+  font-size: 22px;
+}
+button {
+  margin-top: 3rem;
+  color: white;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #141480;
+  background-image: linear-gradient(315deg, #16166b 0%, #266488 74%);
+}
+h2 {
+  text-align: center;
+  color: #939cc5;
+  margin: 1rem 0;
+}
